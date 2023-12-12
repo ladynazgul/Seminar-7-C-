@@ -21,7 +21,7 @@ int FindSum(int[,] matr)
     int sum = 0;
     for (int i = 0; i < matr.GetLength(0); i++)
     {
-        sum = sum + matr[i, i];
+        sum += matr[i, i];
     }
     return sum;
 }
