@@ -33,9 +33,7 @@ void SortRows(int[,] someMatrix)
             {
                 if (someMatrix[i, k] > someMatrix[i, k - 1])
                 {
-                    int number = someMatrix[i, k];
-                    someMatrix[i, k] = someMatrix[i, k - 1];
-                    someMatrix[i, k - 1] = number;
+                    (someMatrix[i, k - 1], someMatrix[i, k]) = (someMatrix[i, k], someMatrix[i, k - 1]);
                 }
             }
         }
