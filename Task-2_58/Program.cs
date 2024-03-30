@@ -29,9 +29,7 @@ int[,] SortDesc(int[,] matrix)
             {
                 if (matrix[i, k] > matrix[i, minPosition]) minPosition = k;
             }
-            int tmp = matrix[i, j];
-            matrix[i, j] = matrix[i, minPosition];
-            matrix[i, minPosition] = tmp;
+            (matrix[i, minPosition], matrix[i, j]) = (matrix[i, j], matrix[i, minPosition]);
         }
     }
     return matrix;
