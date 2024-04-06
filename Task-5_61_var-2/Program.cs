@@ -16,7 +16,7 @@ int[,] GetMatrix(int row, int col, int min, int max)
 int RowNumber(int[,] array)
 {
     int index = 0;
-    int sum = 0;
+    int sum;
     int result = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
